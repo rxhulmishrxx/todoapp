@@ -1,80 +1,72 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', "sans-serif";
 
 }
 
 
-.full-container{
-    position: relative;
-    width: 100vw;
-  height: 100vh;
-   background-image: url("background.jpg");
-  background-size: cover;      /* fills container */
-  background-position: center; /* center image */
-  background-repeat: no-repeat;
-}
-.headingtodo{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 10px;
-    color: white;
-}
-.create-task{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 60px;
-    background: #212121;
-    margin-top: 50px;
-    border-radius: 10%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-}
-.create-task{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+
+body{
+  min-height:100vh;
+  background:#111;
+  padding:20px;
+  background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+/* ===== SECTION FIRST ===== */
 
-.task-input {
-  margin: 30px;
-  background: none;
-  border: none;
-  outline: none;
-  max-width: 190px;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 9999px;
-  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-  color: #fff;
+.section-first{
+  width:100%;
 }
 
-#createbtn {
-  cursor: pointer;
-  background-color: #3b82f6; /* bg-blue-500 */
-  color: white;
-  padding: 8px 24px; /* py-2 px-6 */
-  border-radius: 8px;
-  border: none;
-  border-bottom: 4px solid #2563eb; /* border-blue-600 */
-
-  transition: all 0.2s ease ,filter 0.2s ease;
-  font-size: 16px;
-  font-weight: 500;
+/* Heading top-left */
+#todoheading{
+  color:white;
+  margin-bottom:40px;
 }
 
-/* Hover state */
-#createbtn:hover {
-  filter: brightness(1.1); /* hover:brightness-110 */
+/* Card (centered automatically) */
+.section-first{
+  max-width:450px;
+  margin:0 auto;            /* centers on laptop + mobile */
+  background:#212121;
+  padding:35px 25px;
+  border-radius:14px;
+  text-align:center;
 }
 
-/* Active (click) state */
-#createbtn:active {
-  filter: brightness(0.9);
+/* Input */
+#input-box{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:8px;
+  background:#2b2b2b;
+  color:white;
+}
+
+#input-box::placeholder{
+  color:#888;
+}
+
+/* Minimal button */
+#Create-task{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:8px;
+  background:white;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+#Create-task:hover{
+  transform:translateY(-2px);
+  background:#eaeaea;
 }

@@ -1,25 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo list</title>
-    <link rel="icon" type="image/png" href="todoicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="full-container">
-        <div class="headingtodo">
-            <h1 id="todoheading">Todo List</h1>
-        </div>
-        <div class="create-task">
-            <input type="text" class="task-input" placeholder="Enter a task" />
-            <button id="createbtn">Create</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=delete"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="section-first">
+        <h1 id="todoheading">Todo List</h1>
 
-        </div>
+        <input id="input-box" type="text" placeholder="Enter your task here " />
+        <button id="Create-task">Create</button>
+      </div>
+      <div class="section-second">
+        <h2 id="Pending-tasks">Pending Tasks</h2>
+        <i class="fa-regular fa-circle"></i>
+        <p id="Pending-task">do this</p>
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-solid fa--angle-down"></i>
+        <i class="fa-solid fa-pen-to-square"></i>
+        <span class="material-symbols-outlined"> delete </span>
+      </div>
+
+      <div class="section-third">
+        <h2 id="Completed-tasks">Completed Tasks</h2>
+        <i class="fa-regular fa-circle"></i>
+        <p id="Completed-task">do this</p>
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-solid fa-chevron-right arrow"></i>
+        <i class="fa-solid fa-angle-down"></i>
+        <i class="fa-solid fa-pen-to-square"></i>
+        <span class="material-symbols-outlined"> delete </span>
+      </div>
+
+      <div class="section-fourth">
+        <h2 id="Old-Incomplete-tasks">Old Incomplete Tasks</h2>
+        <i class="fa-regular fa-circle"></i>
+        <p id="Old-Incomplete-task">do this</p>
+        <p id="Date">Date</p>
+        <p id="Time">time</p>
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-solid fa-chevron-right arrow"></i>
+        <i class="fa-solid fa-angle-down"></i>
+        <i class="fa-solid fa-pen-to-square"></i>
+        <span class="material-symbols-outlined"> delete </span>
+      </div>
     </div>
-</body>
+  </body>
 </html>
