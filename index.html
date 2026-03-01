@@ -32,38 +32,68 @@
         <button id="Create-task">Create</button>
       </div>
       <div class="section-second">
-        <h2 id="Pending-tasks">Pending Tasks</h2>
-        <i class="fa-regular fa-circle"></i>
-        <p id="Pending-task">do this</p>
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-solid fa--angle-down"></i>
-        <i class="fa-solid fa-pen-to-square"></i>
-        <span class="material-symbols-outlined"> delete </span>
-      </div>
+  <div class="section-header">
+    <h2>Pending Tasks</h2>
+    <i class="fa-solid fa-chevron-right toggle-arrow"></i>
+  </div>
 
-      <div class="section-third">
-        <h2 id="Completed-tasks">Completed Tasks</h2>
-        <i class="fa-regular fa-circle"></i>
-        <p id="Completed-task">do this</p>
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-solid fa-chevron-right arrow"></i>
-        <i class="fa-solid fa-angle-down"></i>
-        <i class="fa-solid fa-pen-to-square"></i>
-        <span class="material-symbols-outlined"> delete </span>
-      </div>
+  <!-- Empty container -->
+  <div class="task-list"></div>
+</div>
+
+<div class="section-third">
+  <div class="section-header">
+    <h2>Completed Tasks</h2>
+    <i class="fa-solid fa-chevron-right toggle-arrow"></i>
+  </div>
+
+  <!-- Empty container -->
+  <div class="task-list"></div>
+</div>
 
       <div class="section-fourth">
-        <h2 id="Old-Incomplete-tasks">Old Incomplete Tasks</h2>
-        <i class="fa-regular fa-circle"></i>
-        <p id="Old-Incomplete-task">do this</p>
-        <p id="Date">Date</p>
-        <p id="Time">time</p>
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-solid fa-chevron-right arrow"></i>
-        <i class="fa-solid fa-angle-down"></i>
-        <i class="fa-solid fa-pen-to-square"></i>
-        <span class="material-symbols-outlined"> delete </span>
+
+  <!-- Header -->
+  <div class="section-header">
+    <h2>Old Incomplete Tasks</h2>
+    <i class="fa-solid fa-chevron-right toggle-arrow"></i>
+  </div>
+
+  <!-- Task List -->
+  <div class="task-list">
+
+    <div class="task-row">
+
+      <!-- status circle -->
+      <i class="fa-regular fa-circle task-status"></i>
+
+      <!-- task content -->
+      <div class="task-content">
+        <p class="task-text">Old incomplete task example</p>
+
+        <div class="task-meta">
+          <span class="task-date">12 Mar 2026</span>
+          <span class="task-time">10:45 PM</span>
+        </div>
       </div>
+
+      <!-- actions -->
+      <div class="task-actions">
+        <i class="fa-solid fa-pen-to-square edit"></i>
+        <span class="material-symbols-outlined delete">delete</span>
+      </div>
+
     </div>
+
+  </div>
+
+</div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>

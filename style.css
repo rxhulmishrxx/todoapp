@@ -12,10 +12,19 @@ body{
   min-height:100vh;
   background:#111;
   padding:20px;
-  background-image: url("background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+body::before{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-image:url("background.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  z-index:-1;
 }
 
 /* ===== SECTION FIRST ===== */
@@ -69,4 +78,133 @@ body{
 #Create-task:hover{
   transform:translateY(-2px);
   background:#eaeaea;
+}
+/* second section styling*/
+/* ===== SECTION SECOND ===== */
+
+.section-second{
+  width:100%;
+  margin:40px 0;
+  color:white;
+}
+
+/* ---------- Header ---------- */
+
+.section-header{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.section-header h2{
+  font-weight:500;
+  white-space:nowrap;
+}
+
+/* Line extending full width */
+.section-header::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background:rgba(255,255,255,0.4);
+}
+
+/* Arrow */
+.toggle-arrow{
+  cursor:pointer;
+  font-size:18px;
+}
+
+/* ---------- Task List ---------- */
+
+.task-list{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ---------- Task Row ---------- */
+
+.task-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:8px 0;
+}
+
+/* Circle */
+.task-status{
+  cursor:pointer;
+  font-size:18px;
+}
+
+/* Task text */
+.task-text{
+  flex:1;
+  word-break:break-word;
+}
+
+/* Right icons */
+.task-actions{
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+.task-actions i,
+.task-actions span{
+  cursor:pointer;
+  font-size:18px;
+}
+
+
+/* ===== SECTION THIRD ===== */
+
+.section-third{
+  width:100%;
+  margin:40px 0;
+  color:white;
+}
+
+/* Optional: Make completed task look different */
+.section-third .task-text{
+  text-decoration: line-through;
+  opacity:0.8;
+}
+
+/* ===== SECTION FOURTH ===== */
+
+.section-fourth{
+  width:100%;
+  margin:40px 0;
+  color:white;
+}
+
+/* task text + metadata column */
+.task-content{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+
+/* date & time row */
+.task-meta{
+  font-size:12px;
+  opacity:0.7;
+  display:flex;
+  gap:15px;
+  margin-top:4px;
+}
+
+/* small separator feel */
+.task-date::after{
+  content:"•";
+  margin-left:15px;
+}
+/* Hide all task sections initially */
+
+.section-second,
+.section-third,
+.section-fourth{
+  display: none;
 }
